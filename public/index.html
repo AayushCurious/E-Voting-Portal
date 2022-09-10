@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+           <link rel = "icon" href = "media/title icon.png" type = "image/x-icon">
+           
+           
+        <title>Blockchain Voting System</title>
+    </head>
+    <body>
+       <div class="topic"><h1><a href="#">E-Voting Portal🇴🇲</a></h1></div>
+      
+    
+       <div class="con" id="con">
+          The wallet is not connected
+       </div>
+       <button class="wallet" id="wallet" onclick="connectWallet()">Connect Wallet</button>
+       <html lang="en">
+  <head>
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+  </head>
+       <div class="results" id="results">
+          <h1 id="results-title" class="results-title"></h1>
+          <br>
+          <img src="media/QR.png" width="400px" height="400px">
+          <br><br>
+          <form></form>
+          <div class="voting-id" id="voting-id">Your Voting Id</div><div class="idCode" id="idCode"></div>
+    
+          <button class="vote" onclick="Vote()" id="Vote">Vote <input type="checkbox" id="ticker" style="display: none;"></button>
+          <script>
+            function myFunction() {
+              document.getElementById("myCheck").click();
+            }
+            </script>
+       
+       </div>
+        
+    
+       <div class="list-executive" id="listExecutive">
+          <h1>Senior Executives</h1>
+             <li class="list">Alpha <input type="checkbox" onclick="votex()"  id="01ee"></li>
+             <li class="list">Beta<input type="checkbox" onclick="votex()" id="02ee"></li>
+             <li class="list">Gamma<input type="checkbox" onclick="votex()"  id="03ee"></li>
+             <li class="list">Kappa <input type="checkbox" onclick="votex()"  id="04ee"></li>
+       </div>
+    
+    
+       <div class="list-vice-executive" id="listViceExecutive">
+          <h1>Vice Executives</h1>
+             <li class="list" >Omega<input type="checkbox" onclick="votey()" id="01dd"></li>
+             <li class="list" >Theta<input type="checkbox" onclick="votey()" id="02dd"></li>
+             <li class="list" >Beta<input type="checkbox" onclick="votey()" id="03dd"></li>
+             <li class="list" >Lambda <input type="checkbox" onclick="votey()" id="04dd"></li>
+
+       </div>
+      </form>
+       <div><button class="xelec" onclick="Votephone()" id="Xelec">Vote <input type="checkbox" id="ticker" style="display: none;"></button></div>
+<script>
+   
+</script>
+       <script type="text/javascript">
+         window.omnisend = window.omnisend || [];
+         omnisend.push(["accountID", "63178836542080b7150b3082"]);
+         omnisend.push(["track", "$pageViewed"]);
+         !function(){var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="https://omnisnippet1.com/inshop/launcher-v2.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}();
+     </script>
+    
+    <form action="https://sheetdb.io/api/v1/voho4fiv8lqxn" method="post" id="sheetdb-form">
+      <div class="container">
+      <input type="text" name="data[Senior Executive]" id="Senior" style="display: none;">
+      <input type="password"name="data[Vice Executive]" id="Vice" style="display:none">
+          <button type="submit" class="signupbtn" style="display: none;" id="Button" onclick="func()" autocomplete=”off”>Complete</button>
+      </div>
+    </form>
+
+    <script>
+      var form = document.getElementById('sheetdb-form');
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    fetch(form.action, {
+        method : "POST",
+        body: new FormData(document.getElementById("sheetdb-form")),
+    }).then(
+        response => response.json()
+    ).then((html) => {
+    });
+  });
+  </script>
+
+    </body>
+
+</style>
+<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+<script src="wallet.js" type="text/javascript"></script>
+<script src="contracts/index.js" type="text"></script>
+</html>

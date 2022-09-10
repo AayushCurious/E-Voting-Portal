@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "public": "public",
+    "cleanUrls": true,
+    "trailSlash": true,
+    "rewrites": [
+      {
+        "source": "/results",
+        "destination": "/results.html",
+        "type": 3011
+      }
+    ]
+  },
+  "database": {
+    "rules": "database.rules.json"
+  }
+}
